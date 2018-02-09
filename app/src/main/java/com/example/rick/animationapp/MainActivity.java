@@ -1,14 +1,11 @@
 package com.example.rick.animationapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        final RelativeLayout rlSlide = (RelativeLayout) findViewById(R.id.rlSlide);
-        final TextView txvTitle = (TextView) findViewById(R.id.txvTitle);
+//heelo
+        final RelativeLayout rlSlide = findViewById(R.id.rlSlide);
+        final TextView txvTitle = findViewById(R.id.txvTitle);
 
         Animation myAnimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.spin_in);
         rlSlide.setAnimation(myAnimation);
